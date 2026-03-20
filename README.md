@@ -53,7 +53,6 @@ Menu Presence: Verifies "Courses", "LIVE Classes", and "Practice" are visible in
 Dobby Assistant: Confirms the Dobby Guvi Assistant widget is present on the homepage.
 Logout Functionality: Validates successful session termination and redirection to the home/login page.
 ```
-
 ## Project Structure
 ```
 
