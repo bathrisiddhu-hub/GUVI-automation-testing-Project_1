@@ -28,16 +28,16 @@ git clone https://github.com
 cd GUVI-automation-testing-Project_1
 
 2. **Install Dependencies**:
-bash
 pip install -r requirements.txt
 
-Running Tests
-To execute the full test suite and generate an HTML report, run:
+## Running Tests
+To execute the full test suite and generate an HTML report, run the following command in your terminal:
 bash
 pytest
+Use code with caution.
 
-Test Suite Coverage
-The framework covers the following 10 test cases:
+## Test Suite Coverage
+The framework covers the following 10 critical test cases:
 URL Validation: Verifies that the website loads successfully without errors.
 Page Title: Confirms the title matches "GUVI | Learn to code in your native language".
 Login Button Visibility: Checks if the Login button is displayed and clickable.
@@ -49,7 +49,7 @@ Menu Presence: Verifies "Courses", "LIVE Classes", and "Practice" are visible in
 Dobby Assistant: Confirms the Dobby Guvi Assistant widget is present on the homepage.
 Logout Functionality: Validates successful session termination and redirection to the home/login page.
 
-Project Structure
+## Project Structure
 
 ├── pages/                # Page Object classes (Locators & Action Methods)
 │   ├── base_page.py      # Base class with common Selenium wrappers
