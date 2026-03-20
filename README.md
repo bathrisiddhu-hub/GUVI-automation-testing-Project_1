@@ -38,7 +38,7 @@ pip install -r requirements.txt
 To execute the full test suite and generate an HTML report, run the following command in your terminal:
 ```bash
 pytest
-
+```
 ## Test Suite Coverage
 The framework covers the following 10 critical test cases:
 URL Validation: Verifies that the website loads successfully without errors.
