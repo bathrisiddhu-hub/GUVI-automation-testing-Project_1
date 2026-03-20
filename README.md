@@ -28,12 +28,13 @@ The objective of this project is to automate the testing of the GUVI web applica
 ```bash
 git clone https://github.com
 cd GUVI-automation-testing-Project_1
+```
 
 2. **Install Dependencies**:
-```bash
 pip install -r requirements.txt
 
-## Running Tests
+
+### Running Tests
 To execute the full test suite and generate an HTML report, run the following command in your terminal:
 ```bash
 pytest
