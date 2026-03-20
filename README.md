@@ -1,65 +1,60 @@
+markdown
 # Automation Testing of GUVI EdTech Platform
 
-## Website Link
+## 🌐 Website Link
 The target application for this automation suite is: [https://www.guvi.in](https://www.guvi.in)
 
-## Test Objective
+## 🎯 Test Objective
 The objective of this project is to automate the testing of the GUVI web application by simulating user actions and validating key UI functionalities. This includes verifying page behavior, accessibility of critical elements, navigation flows, and authentication processes.
 
-## Tech Stack
+## 🛠️ Tech Stack
 - **Language**: Python 3.x
 - **Browser Automation**: Selenium WebDriver
 - **Test Framework**: Pytest
 - **Reporting**: Pytest-HTML
 - **Driver Management**: Webdriver-Manager
 
-## Features
-- **Cross-Browser Validation**: Configured to execute tests across both Google Chrome and Mozilla Firefox.
+## ✨ Features
+- **Cross-Browser Validation**: Configured to execute tests across both **Google Chrome** and **Mozilla Firefox**.
 - **Page Object Model (POM)**: Implements separation between test logic and page-specific locators for maintainability.
 - **Object-Oriented Design**: Utilizes inheritance and encapsulation to promote code reusability.
-- **Resilient Execution**: Employs Explicit Waits and Exception Handling to manage dynamic elements.
+- **Resilient Execution**: Employs **Explicit Waits** and **Exception Handling** to manage dynamic elements.
 - **Automated Reporting**: Generates detailed HTML reports using the `pytest-html` plugin.
 - **Resource Management**: Uses Pytest fixtures to ensure all browser instances are properly closed after execution.
 
-## Setup and Installation
-To set up and run this project locally, follow these steps:
+## ⚙️ Setup and Installation
 
-Clone the Repository:
+1. **Clone the Repository**:
+```bash
+git clone https://github.com
+cd GUVI-automation-testing-Project_1
+Use code with caution.
 
-git clone https://github.com/imranc07/Mini_Project_1.git
-cd Mini_Project_1
-Create a Virtual Environment (optional but recommended):
-
-python3 -m venv env
-source env/bin/activate  # For Windows, use `env\Scripts\activate`
 Install Dependencies:
-
+bash
 pip install -r requirements.txt
-Set Up Environment Variables:
+Use code with caution.
 
-Create a .env file in the root directory to store sensitive information such as login credentials and URLs. Example:
-BASE_URL=https://example.com
-USER_EMAIL=test@example.com
-USER_PASSWORD=yourpassword
-Running Tests
-To execute tests, use the following commands:
-
-Run All Tests:
-
+🚀 Running Tests
+To execute the full test suite and generate an HTML report, run the following command in your terminal:
+bash
 pytest
-Generate HTML Report:
+Use code with caution.
 
-pytest --html=Reports/test_report.html
-Run Tests by Marker (e.g., only "login" tests):
-
-pytest TestScripts/test_HomePage.py::test_guvi_url
-Headless Browser Execution:
-
-You can set up tests to run in Headless mode directly in your test script.
-Project Structure:
-
-## Project Structure
-
+🧪 Test Suite Coverage
+The framework covers the following 10 critical test cases:
+URL Validation: Verifies that the website loads successfully without errors.
+Page Title: Confirms the title matches "GUVI | Learn to code in your native language".
+Login Button Visibility: Checks if the Login button is displayed and clickable.
+Sign-Up Button Visibility: Checks if the Sign-Up button is displayed and clickable.
+Navigation Flow: Validates that clicking Sign-Up redirects correctly to the registration page.
+Valid Login: Authenticates the user using valid credentials from the test data.
+Invalid Login: Validates that appropriate error messages appear for incorrect credentials.
+Menu Presence: Verifies "Courses", "LIVE Classes", and "Practice" are visible in the navigation.
+Dobby Assistant: Confirms the Dobby Guvi Assistant widget is present on the homepage.
+Logout Functionality: Validates successful session termination and redirection to the home/login page.
+📂 Project Structure
+text
 ├── pages/                # Page Object classes (Locators & Action Methods)
 │   ├── base_page.py      # Base class with common Selenium wrappers
 │   ├── home_page.py      # Homepage elements and actions
@@ -74,6 +69,3 @@ Project Structure:
 ├── pytest.ini            # Global framework configuration and CLI options
 ├── requirements.txt      # Project dependencies
 └── README.md             # Project documentation
-
-git clone https://github.com
-cd GUVI-automation-testing-Project_1
