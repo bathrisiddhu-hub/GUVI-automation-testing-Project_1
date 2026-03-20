@@ -22,13 +22,12 @@ The objective of this project is to automate the testing of the GUVI web applica
 - **Automated Reporting**: Generates detailed HTML reports using the `pytest-html` plugin.
 - **Resource Management**: Uses Pytest fixtures to ensure all browser instances are properly closed after execution.
 
-## Setup and Installation
+### Setup and Installation
 
 1. **Clone the Repository**:
 ```bash
 git clone https://github.com
 cd GUVI-automation-testing-Project_1
-Use code with caution.
 
 2. **Install Dependencies**:
 ```bash
