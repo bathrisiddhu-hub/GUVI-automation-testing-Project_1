@@ -22,32 +22,41 @@ The objective of this project is to automate the testing of the GUVI web applica
 - **Resource Management**: Uses Pytest fixtures to ensure all browser instances are properly closed after execution.
 
 ## Setup and Installation
-1. **Clone the Repository**:
-```bash
-git clone https://github.com
-cd GUVI-automation-testing-Project_1
+To set up and run this project locally, follow these steps:
 
-2. **Install Dependencies**:
+Clone the Repository:
+
+git clone https://github.com/imranc07/Mini_Project_1.git
+cd Mini_Project_1
+Create a Virtual Environment (optional but recommended):
+
+python3 -m venv env
+source env/bin/activate  # For Windows, use `env\Scripts\activate`
+Install Dependencies:
+
 pip install -r requirements.txt
+Set Up Environment Variables:
 
-## Running Tests
-To execute the full test suite and generate an HTML report, run the following command in your terminal:
-bash
+Create a .env file in the root directory to store sensitive information such as login credentials and URLs. Example:
+BASE_URL=https://example.com
+USER_EMAIL=test@example.com
+USER_PASSWORD=yourpassword
+Running Tests
+To execute tests, use the following commands:
+
+Run All Tests:
+
 pytest
-Use code with caution.
+Generate HTML Report:
 
-## Test Suite Coverage
-The framework covers the following 10 critical test cases:
-URL Validation: Verifies that the website loads successfully without errors.
-Page Title: Confirms the title matches "GUVI | Learn to code in your native language".
-Login Button Visibility: Checks if the Login button is displayed and clickable.
-Sign-Up Button Visibility: Checks if the Sign-Up button is displayed and clickable.
-Navigation Flow: Validates that clicking Sign-Up redirects correctly to the registration page.
-Valid Login: Authenticates the user using valid credentials from the test data.
-Invalid Login: Validates that appropriate error messages appear for incorrect credentials.
-Menu Presence: Verifies "Courses", "LIVE Classes", and "Practice" are visible in the navigation.
-Dobby Assistant: Confirms the Dobby Guvi Assistant widget is present on the homepage.
-Logout Functionality: Validates successful session termination and redirection to the home/login page.
+pytest --html=Reports/test_report.html
+Run Tests by Marker (e.g., only "login" tests):
+
+pytest TestScripts/test_HomePage.py::test_guvi_url
+Headless Browser Execution:
+
+You can set up tests to run in Headless mode directly in your test script.
+Project Structure:
 
 ## Project Structure
 
