@@ -40,6 +40,7 @@ To execute the full test suite and generate an HTML report, run the following co
 pytest
 ```
 ## Test Suite Coverage
+```
 The framework covers the following 10 critical test cases:
 URL Validation: Verifies that the website loads successfully without errors.
 Page Title: Confirms the title matches "GUVI | Learn to code in your native language".
@@ -51,8 +52,10 @@ Invalid Login: Validates that appropriate error messages appear for incorrect cr
 Menu Presence: Verifies "Courses", "LIVE Classes", and "Practice" are visible in the navigation.
 Dobby Assistant: Confirms the Dobby Guvi Assistant widget is present on the homepage.
 Logout Functionality: Validates successful session termination and redirection to the home/login page.
+```
 
 ## Project Structure
+```
 
 text
 ├── pages/                # Page Object classes (Locators & Action Methods)
@@ -69,3 +72,4 @@ text
 ├── pytest.ini            # Global framework configuration and CLI options
 ├── requirements.txt      # Project dependencies
 └── README.md             # Project documentation
+```
