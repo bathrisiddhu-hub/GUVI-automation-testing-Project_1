@@ -22,7 +22,7 @@ The objective of this project is to automate the testing of the GUVI web applica
 - **Automated Reporting**: Generates detailed HTML reports using the `pytest-html` plugin.
 - **Resource Management**: Uses Pytest fixtures to ensure all browser instances are properly closed after execution.
 
-### Setup and Installation
+## Setup and Installation
 
 1. **Clone the Repository**:
 ```bash
@@ -34,25 +34,24 @@ cd GUVI-automation-testing-Project_1
 pip install -r requirements.txt
 ```
 
-### Running Tests
+## Running Tests
 To execute the full test suite and generate an HTML report, run the following command in your terminal:
 ```bash
 pytest
 ```
 ## Test Suite Coverage
-```
-The framework covers the following 10 critical test cases:
-URL Validation: Verifies that the website loads successfully without errors.
-Page Title: Confirms the title matches "GUVI | Learn to code in your native language".
-Login Button Visibility: Checks if the Login button is displayed and clickable.
-Sign-Up Button Visibility: Checks if the Sign-Up button is displayed and clickable.
-Navigation Flow: Validates that clicking Sign-Up redirects correctly to the registration page.
-Valid Login: Authenticates the user using valid credentials from the test data.
-Invalid Login: Validates that appropriate error messages appear for incorrect credentials.
-Menu Presence: Verifies "Courses", "LIVE Classes", and "Practice" are visible in the navigation.
-Dobby Assistant: Confirms the Dobby Guvi Assistant widget is present on the homepage.
-Logout Functionality: Validates successful session termination and redirection to the home/login page.
-```
+**The framework covers the following 10 critical test cases:**
+- URL Validation: Verifies that the website loads successfully without errors.
+- Page Title: Confirms the title matches "GUVI | Learn to code in your native language".
+- Login Button Visibility: Checks if the Login button is displayed and clickable.
+- Sign-Up Button Visibility: Checks if the Sign-Up button is displayed and clickable.
+- Navigation Flow: Validates that clicking Sign-Up redirects correctly to the registration page.
+- Valid Login: Authenticates the user using valid credentials from the test data.
+- Invalid Login: Validates that appropriate error messages appear for incorrect credentials.
+- Menu Presence: Verifies "Courses", "LIVE Classes", and "Practice" are visible in the navigation.
+- Dobby Assistant: Confirms the Dobby Guvi Assistant widget is present on the homepage.
+- Logout Functionality: Validates successful session termination and redirection to the home/login page.
+
 ## Project Structure
 ```
 
