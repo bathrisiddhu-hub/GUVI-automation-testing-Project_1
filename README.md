@@ -1,20 +1,20 @@
-markdown
+
 # Automation Testing of GUVI EdTech Platform
 
-## 🌐 Website Link
+## Website Link
 The target application for this automation suite is: [https://www.guvi.in](https://www.guvi.in)
 
-## 🎯 Test Objective
+## Test Objective
 The objective of this project is to automate the testing of the GUVI web application by simulating user actions and validating key UI functionalities. This includes verifying page behavior, accessibility of critical elements, navigation flows, and authentication processes.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Language**: Python 3.x
 - **Browser Automation**: Selenium WebDriver
 - **Test Framework**: Pytest
 - **Reporting**: Pytest-HTML
 - **Driver Management**: Webdriver-Manager
 
-## ✨ Features
+## Features
 - **Cross-Browser Validation**: Configured to execute tests across both **Google Chrome** and **Mozilla Firefox**.
 - **Page Object Model (POM)**: Implements separation between test logic and page-specific locators for maintainability.
 - **Object-Oriented Design**: Utilizes inheritance and encapsulation to promote code reusability.
@@ -22,7 +22,7 @@ The objective of this project is to automate the testing of the GUVI web applica
 - **Automated Reporting**: Generates detailed HTML reports using the `pytest-html` plugin.
 - **Resource Management**: Uses Pytest fixtures to ensure all browser instances are properly closed after execution.
 
-## ⚙️ Setup and Installation
+## Setup and Installation
 
 1. **Clone the Repository**:
 ```bash
@@ -30,18 +30,16 @@ git clone https://github.com
 cd GUVI-automation-testing-Project_1
 Use code with caution.
 
-Install Dependencies:
-bash
+2. **Install Dependencies**:
+```bash
 pip install -r requirements.txt
-Use code with caution.
 
-🚀 Running Tests
+## Running Tests
 To execute the full test suite and generate an HTML report, run the following command in your terminal:
-bash
+```bash
 pytest
-Use code with caution.
 
-🧪 Test Suite Coverage
+## Test Suite Coverage
 The framework covers the following 10 critical test cases:
 URL Validation: Verifies that the website loads successfully without errors.
 Page Title: Confirms the title matches "GUVI | Learn to code in your native language".
@@ -53,7 +51,9 @@ Invalid Login: Validates that appropriate error messages appear for incorrect cr
 Menu Presence: Verifies "Courses", "LIVE Classes", and "Practice" are visible in the navigation.
 Dobby Assistant: Confirms the Dobby Guvi Assistant widget is present on the homepage.
 Logout Functionality: Validates successful session termination and redirection to the home/login page.
-📂 Project Structure
+
+## Project Structure
+
 text
 ├── pages/                # Page Object classes (Locators & Action Methods)
 │   ├── base_page.py      # Base class with common Selenium wrappers
